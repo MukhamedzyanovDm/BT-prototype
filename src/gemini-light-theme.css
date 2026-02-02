@@ -116,7 +116,7 @@ body {
   background-color: var(--card-background-color);
   border-radius: 12px;
   padding: 1rem;
-  box-shadow: 0 1px 3px var(--shadow-color);
+  box-shadow: 0 0px 2px var(--shadow-color);
   flex-grow: 1;
 }
 
@@ -136,6 +136,13 @@ body {
   margin-top: 0.5rem;
   text-align: right;
   color: #333;
+}
+
+.card-stock {
+  font-size: 0.75rem;
+  color: #787878; /* Muted gray */
+  text-align: left;
+  margin-top: 0.25rem;
 }
 
 /* Chat Message Styles */
