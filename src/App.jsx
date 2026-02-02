@@ -29,7 +29,7 @@ function App() {
       const botMessage = { 
         id: `bot-q1-${Date.now()}`, 
         type: 'bot_chips', 
-        content: 'На какой бюджет вы рассчитываете?',
+        content: 'Бюджет',
         chips: ['до 5 000р', '5 000 - 10 000р', 'свыше 10 000р']
       };
       setChatHistory(prev => [...prev, botMessage]);
@@ -49,7 +49,7 @@ function App() {
         const botMessage = { 
           id: `bot-q2-${Date.now()}`, 
           type: 'bot_chips', 
-          content: 'Вас интересуют зимние или летние шины?',
+          content: 'Сезон',
           chips: ['летние', 'зимние шипованные', 'зимние нешипованные', 'всесезонные']
         };
         setChatHistory(prev => [...prev, botMessage]);
@@ -59,10 +59,10 @@ function App() {
         const resultsHeader = { id: `bot-header-${Date.now()}`, type: 'bot_text', content: `Вот результаты по вашему запросу: ${finalParams.model}`};
         
         const mockData = [
-          { id: 1, name: 'Continental IceContact 2 SUV 275/45 R20 110T XL', price: '8500 руб.', description: 'Премиальные зимние шины для максимального сцепления на льду и снегу.', image: tireImage },
-          { id: 2, name: 'Pirelli Scorpion Winter 235/55 R19 105H', price: '7200 руб.', description: 'Сбалансированные зимние шины, обеспечивают отличную управляемость.', image: tireImage },
-          { id: 3, name: 'Nokian Hakkapeliitta R3 SUV 225/60 R18 104R', price: '9800 руб.', description: 'Высокотехнологичные шины для суровых зимних условий. Нешипованные.', image: tireImage },
-          { id: 4, name: 'Kama Alga 215/65 R17 99T', price: '4100 руб.', description: 'Надежный и доступный вариант для зимней эксплуатации в городе.', image: tireImage },
+          { id: 1, name: 'Continental IceContact 2 SUV 275/45 R20 110T XL', price: '8 500 ₽', description: 'Премиальные зимние шины для максимального сцепления на льду и снегу.', image: tireImage },
+          { id: 2, name: 'Pirelli Scorpion Winter 235/55 R19 105H', price: '7 200 ₽', description: 'Сбалансированные зимние шины, обеспечивают отличную управляемость.', image: tireImage },
+          { id: 3, name: 'Nokian Hakkapeliitta R3 SUV 225/60 R18 104R', price: '9 800 ₽', description: 'Высокотехнологичные шины для суровых зимних условий. Нешипованные.', image: tireImage },
+          { id: 4, name: 'Kama Alga 215/65 R17 99T', price: '4 100 ₽', description: 'Надежный и доступный вариант для зимней эксплуатации в городе.', image: tireImage },
         ];
 
         const results = { id: `bot-results-${Date.now()}`, type: 'bot', content: mockData };

@@ -16,7 +16,7 @@ function ResultsDisplay({ chatHistory, loading, onChipClick }) {
   return (
     <>
       {chatHistory.map(message => (
-        <div key={message.id}>
+        <div key={message.id} className="message-wrapper">
           {message.type === 'welcome' && (
             <div className="welcome-message">
               <h2>{message.content}</h2>

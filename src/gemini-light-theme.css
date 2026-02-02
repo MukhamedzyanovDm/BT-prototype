@@ -139,7 +139,7 @@ body {
 }
 
 /* Chat Message Styles */
-.message-container {
+.message-wrapper {
   margin-bottom: 1.5rem;
 }
 
