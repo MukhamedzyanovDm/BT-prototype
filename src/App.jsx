@@ -77,7 +77,7 @@ function App() {
   };
 
   const showSearchBar = dialogState === 'awaiting_model';
-  const placeholder = 'Введите модель авто (Lada Vesta)';
+  const placeholder = 'Введите модель автомобиля (Lada Vesta)';
   const currentIsInitialState = isInitialState();
   
   return (

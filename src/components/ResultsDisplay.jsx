@@ -20,7 +20,7 @@ function ResultsDisplay({ chatHistory, loading, onChipClick }) {
           {message.type === 'welcome' && (
             <div className="welcome-message">
               <h2>{message.content}</h2>
-              <p>Помогу подобрать шины и диски для вашего автомобиля</p>
+              <p> </p>
             </div>
           )}
           {message.type === 'user' && (
