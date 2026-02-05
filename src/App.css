@@ -58,7 +58,7 @@
   cursor: pointer;
   transition: background-color 0.2s;
   color: var(--primary-color);
-  font-family: 'Google Sans', sans-serif;
+  font-family: 'Inter tight medium', sans-serif;
 }
 
 .chip:hover {

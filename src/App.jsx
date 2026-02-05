@@ -30,7 +30,7 @@ function App() {
         id: `bot-q1-${Date.now()}`, 
         type: 'bot_chips', 
         content: 'Бюджет',
-        chips: ['до 5 000р', '5 000 - 10 000р', 'свыше 10 000р']
+        chips: ['до 5 000 ₽', '5 000 - 10 000 ₽', 'свыше 10 000 ₽']
       };
       setChatHistory(prev => [...prev, botMessage]);
       setDialogState('awaiting_budget');
@@ -59,10 +59,13 @@ function App() {
         const resultsHeader = { id: `bot-header-${Date.now()}`, type: 'bot_text', content: `Вот результаты по вашему запросу: ${finalParams.model}`};
         
         const mockData = [
-          { id: 1, name: 'Continental IceContact 2 SUV 275/45 R20 110T XL', price: '8 500 ₽', description: 'Премиальные зимние шины для максимального сцепления на льду и снегу.', image: tireImage },
-          { id: 2, name: 'Pirelli Scorpion Winter 235/55 R19 105H', price: '7 200 ₽', description: 'Сбалансированные зимние шины, обеспечивают отличную управляемость.', image: tireImage },
-          { id: 3, name: 'Nokian Hakkapeliitta R3 SUV 225/60 R18 104R', price: '9 800 ₽', description: 'Высокотехнологичные шины для суровых зимних условий. Нешипованные.', image: tireImage },
-          { id: 4, name: 'Kama Alga 215/65 R17 99T', price: '4 100 ₽', description: 'Надежный и доступный вариант для зимней эксплуатации в городе.', image: tireImage },
+          { id: 1, name: 'Continental IceContact 2 SUV 275/45 R20 110T XL', price: '8 500 ₽', description: 'Премиальные зимние шины для кроссоверов, обеспечивающие исключительное сцепление на льду и снегу.', image: tireImage },
+          { id: 2, name: 'Pirelli Scorpion Winter 235/55 R19 105H', price: '7 200 ₽', description: 'Высокопроизводительные зимние шины для внедорожников, гарантирующие отличную управляемость и безопасность.', image: tireImage },
+          { id: 3, name: 'Nokian Hakkapeliitta R3 SUV 225/60 R18 104R', price: '9 800 ₽', description: 'Нешипованные зимние шины, разработанные для суровых северных условий, обеспечивают комфорт и стабильность.', image: tireImage },
+          { id: 4, name: 'Pirelli Ice Zero 185/65 R15 92T XL', price: '5 100 ₽', description: 'Шипованные зимние шины с улучшенными показателями сцепления и торможения на обледенелых дорогах.', image: tireImage },
+          { id: 5, name: 'Ikon Tyres Nordman RS2 SUV 225/65 R17 106R XL', price: '6 579 ₽', description: 'Надежные зимние шины для SUV, предлагающие оптимальный баланс сцепления и долговечности в различных условиях.', image: tireImage },
+          // { id: 6, name: 'Hankook W429A (Winter i*Pike X) 235/50 R19 103T XL', price: '7 898 ₽', description: 'Зимние шипованные шины с направленным рисунком протектора для отличной проходимости по снегу и льду.', image: tireImage },
+          // { id: 7, name: 'Sailun Ice Blazer Arctic 225/50 R17 98H XL', price: '9 598 ₽', description: 'Экономичные зимние шины с хорошими характеристиками на снегу и мокрой дороге, подходят для городской езды.', image: tireImage },
         ];
 
         const results = { id: `bot-results-${Date.now()}`, type: 'bot', content: mockData };
